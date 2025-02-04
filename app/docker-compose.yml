@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./be
+    ports:
+      - "5050:5050"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./be:/app
+    restart: always
+
+  frontend:
+    build: ./fe
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./fe:/app
+    environment:
+      - NODE_ENV=development
+    restart: always

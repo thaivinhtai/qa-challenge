@@ -1,0 +1,127 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.invite-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.invite-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.invite-section {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 30px;
+    flex: 1;
+    text-align: center;
+    max-width: 500px;
+    min-height: 400px;
+}
+
+.left-section,
+.right-section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    word-break: break-word;
+    margin: 20px 0;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+.nft-preview {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.nft-preview img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+}
+
+.note {
+    color: #66ff99;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-container img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.claim-button {
+    background-color: #ffd700;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.claim-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.error-text {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-text {
+    color: #66ff99;
+    margin-top: 10px;
+}
